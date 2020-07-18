@@ -1,4 +1,5 @@
 # cac
+<<<<<<< HEAD
 
 ## Project setup
 ```
@@ -22,3 +23,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+come on man
+>>>>>>> 7bb40a3eb2fdf86c3be709895eb8c131fef3c195
