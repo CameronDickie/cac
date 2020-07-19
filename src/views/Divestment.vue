@@ -1,10 +1,15 @@
 <template>
-    
+    <Timeline />
 </template>
 
 <script>
+import Timeline from "@/components/Timeline.vue"
+
 export default {
     name: "Divestment",
+    components: {
+        Timeline
+    },
     data() {
         return {
 
