@@ -10,7 +10,20 @@
     </v-toolbar>
 
     <v-navigation-drawer v-model="drawer" app class="primary">
-      <p>Test</p>
+      <v-container grid-list>
+        <v-layout row wrap>
+          <v-flex xs12>
+            <v-btn flat text large href="/home">Home</v-btn>
+          </v-flex>
+          <v-flex xs12>
+            <v-btn flat text large href="/about">About</v-btn>
+          </v-flex>
+          <v-flex xs12>
+            <v-btn flat text large href="/divestment">Divestment</v-btn>
+          </v-flex>
+        </v-layout>
+      </v-container>
+      
     </v-navigation-drawer>
   </nav>
 </template>
