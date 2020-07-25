@@ -13,6 +13,9 @@
       <v-container grid-list>
         <v-layout row wrap>
           <v-flex xs12>
+            <v-toolbar-title class="title-docked">Climate Action Carleton</v-toolbar-title>
+          </v-flex>
+          <v-flex xs12>
             <v-btn flat text large href="/home">Home</v-btn>
           </v-flex>
           <v-flex xs12>
@@ -38,3 +41,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+.title-docked {
+  padding-left: 25px;
+}
+</style>
