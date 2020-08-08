@@ -1,11 +1,12 @@
 <template>
   <v-carousel
     cycle
-    height="60vh"
     interval="8000"
     hide-delimiter-background
     show-arrows-on-hover
     touch
+    style="margin:auto;"
+    max-width="1455"
   >
     <v-carousel-item
       v-for="(item,i) in items"
@@ -13,23 +14,7 @@
       :src="item.src"
       reverse-transition="fade-transition"
       transition="fade-transition"
-    >
-      <div align-center>
-        <v-container class="text-h4">
-          <div class="d-inline-flex primary">
-            <p>This is a test with text</p>
-          </div>
-          <br />
-          <div class="d-inline-flex primary">
-            <p>Hopefully this creates multiple lines of text</p>
-          </div>
-          <br />
-          <div class="d-inline-flex primary">
-            <p>That I can work with to cover a background</p>
-          </div>
-        </v-container>
-      </div>
-    </v-carousel-item>
+    ></v-carousel-item>
   </v-carousel>
 </template>
 
@@ -39,7 +24,7 @@ var imgs = [
   require("../assets/media-content/imgs/img-3.jpg"),
   require("../assets/media-content/imgs/img-4.jpg"),
   require("../assets/media-content/imgs/img-5.jpg"),
-  require("../assets/media-content/imgs/img-6.jpg")
+  require("../assets/media-content/imgs/img-6.jpg"),
 ];
 export default {
   name: "Carousel",
@@ -50,28 +35,38 @@ export default {
         "warning",
         "pink darken-2",
         "red lighten-1",
-        "deep-purple accent-4"
+        "deep-purple accent-4",
       ],
       slides: ["First", "Second", "Third", "Fourth", "Fifth"],
       items: [
         {
-          src: imgs[0]
+          text:
+            "Image 0 test Which might break up into separate lines When I do this",
+          src: imgs[0],
         },
         {
-          src: imgs[1]
+          text:
+            "Image 1 test Which might break up into separate lines When I do this",
+          src: imgs[1],
         },
         {
-          src: imgs[2]
+          text:
+            "Image 2 test Which might break up into separate lines When I do this",
+          src: imgs[2],
         },
         {
-          src: imgs[3]
+          text:
+            "Image 3 test Which might break up into separate lines When I do this",
+          src: imgs[3],
         },
         {
-          src: imgs[4]
-        }
-      ]
+          text:
+            "Image 4 test Which might break up into separate lines When I do this",
+          src: imgs[4],
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
