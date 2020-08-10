@@ -1,7 +1,7 @@
 <template>
   <nav>
     <v-card style="margin:auto;">
-      <v-app-bar app color="grey lighten-5">
+      <v-app-bar prominent shrink-on-scroll app color="grey lighten-5">
         <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-app-bar-nav-icon>
         <v-toolbar-title>Climate Action Carleton</v-toolbar-title>
         <v-spacer></v-spacer>
@@ -10,12 +10,7 @@
         <v-btn flat text large class="hidden-sm-and-down" href="/divestment">Divestment</v-btn>
       </v-app-bar>
     </v-card>
-    <v-navigation-drawer
-      v-model="drawer"
-      app
-      disable-resize-watcher="true"
-      class="grey lighten-5"
-    >
+    <v-navigation-drawer v-model="drawer" app disable-resize-watcher="true" class="grey lighten-5">
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="title">Climate Action Carleton</v-list-item-title>

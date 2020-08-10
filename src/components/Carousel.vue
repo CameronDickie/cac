@@ -14,7 +14,26 @@
       :src="item.src"
       reverse-transition="fade-transition"
       transition="fade-transition"
-    ></v-carousel-item>
+    >
+      <div>
+        <v-container>
+          <v-row>
+            <v-col xs3></v-col>
+            <v-col xs9>
+              <v-card color="grey lighten-5" class="black--text text-h4 text-center">{{item.title}}</v-card>
+            </v-col>
+            <v-col xs3></v-col>
+          </v-row>
+          <v-row>
+            <v-col xs3></v-col>
+            <v-col xs9>
+              <v-card color="grey lighten-5" class="black--text text-body-2 text-center">{{item.text}}</v-card>
+            </v-col>
+            <v-col xs3></v-col>
+          </v-row>
+        </v-container>
+      </div>
+    </v-carousel-item>
   </v-carousel>
 </template>
 
@@ -40,26 +59,31 @@ export default {
       slides: ["First", "Second", "Third", "Fourth", "Fifth"],
       items: [
         {
+          title: "Image 0 title",
           text:
             "Image 0 test Which might break up into separate lines When I do this",
           src: imgs[0],
         },
         {
+          title: "Image 1 title",
           text:
             "Image 1 test Which might break up into separate lines When I do this",
           src: imgs[1],
         },
         {
+          title: "Image 2 title",
           text:
             "Image 2 test Which might break up into separate lines When I do this",
           src: imgs[2],
         },
         {
+          title: "Image 3 title",
           text:
             "Image 3 test Which might break up into separate lines When I do this",
           src: imgs[3],
         },
         {
+          title: "Image 4 title",
           text:
             "Image 4 test Which might break up into separate lines When I do this",
           src: imgs[4],
