@@ -8,6 +8,7 @@
         <v-btn flat text large class="hidden-sm-and-down" href="/home">Home</v-btn>
         <v-btn flat text large class="hidden-sm-and-down" href="/about">About</v-btn>
         <v-btn flat text large class="hidden-sm-and-down" href="/divestment">Divestment</v-btn>
+        <v-btn flat text large class="hidden-sm-and-down" href="/contact">Contact</v-btn>
       </v-app-bar>
     </v-card>
     <v-navigation-drawer v-model="drawer" app disable-resize-watcher="true" class="grey lighten-5">
@@ -78,6 +79,11 @@ export default {
           icon: "mdi-calendar",
           url: "/divestment",
         },
+        {
+          name: "CONTACT",
+          icon: "mdi-account-circle",
+          url: "/contact"
+        }
       ],
     };
   },
