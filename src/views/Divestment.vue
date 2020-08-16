@@ -1,5 +1,7 @@
 <template>
-    <Timeline />
+    <div>
+        <Timeline />
+    </div>
 </template>
 
 <script>
@@ -9,7 +11,7 @@ export default {
     name: "Divestment",
     components: {
         Timeline
-    },
+    },    
     data() {
         return {
 
