@@ -1,7 +1,6 @@
 <template>
     <div>
         <Timeline />
-        <p>hi!!!!</p>
     </div>
 </template>
 
