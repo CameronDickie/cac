@@ -3,11 +3,19 @@
     <v-card style="margin:auto;">
       <v-app-bar prominent shrink-on-scroll app color="grey lighten-5">
         <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-app-bar-nav-icon>
-        <v-toolbar-title>Climate Action Carleton</v-toolbar-title>
+        <v-toolbar-title>
+          <v-img
+            class="d-inline-block"
+            max-height="36"
+            max-width="36"
+            style="padding-right:20px"
+            :src="logo"
+            contain
+          ></v-img>Climate Action Carleton
+        </v-toolbar-title>
         <v-spacer></v-spacer>
         <v-btn flat text large class="hidden-sm-and-down" href="/home">Home</v-btn>
         <v-btn flat text large class="hidden-sm-and-down" href="/about">About</v-btn>
-        <v-btn flat text large class="hidden-sm-and-down" href="/divestment">Divestment</v-btn>
         <v-btn flat text large class="hidden-sm-and-down" href="/contact">Contact</v-btn>
       </v-app-bar>
     </v-card>
@@ -15,10 +23,18 @@
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="title">Climate Action Carleton</v-list-item-title>
-          <v-list-item-subtitle>The Time is Now</v-list-item-subtitle>
+          <v-list-item-subtitle>
+            <v-img
+              class="d-inline-block"
+              max-height="24"
+              max-width="24"
+              style="padding-right:10px"
+              :src="logo"
+              contain
+            ></v-img>The Time is Now
+          </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
-
       <v-divider></v-divider>
       <v-list dense nav>
         <v-list-item v-for="item in links" :key="item" :href="item.url" link>
@@ -63,6 +79,7 @@ export default {
   data() {
     return {
       drawer: false,
+      logo: require("../assets/media-content/imgs/logo-cropped.png"),
       links: [
         {
           name: "HOME",
@@ -74,16 +91,16 @@ export default {
           icon: "mdi-information",
           url: "/about",
         },
-        {
-          name: "DIVESTMENT",
-          icon: "mdi-calendar",
-          url: "/divestment",
-        },
+        // {
+        //   name: "DIVESTMENT",
+        //   icon: "mdi-calendar",
+        //   url: "/divestment",
+        // },
         {
           name: "CONTACT",
           icon: "mdi-account-circle",
-          url: "/contact"
-        }
+          url: "/contact",
+        },
       ],
     };
   },

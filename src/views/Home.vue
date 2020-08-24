@@ -5,7 +5,7 @@
     </v-card>
     <div style="padding:20px">
     </div>
-    <v-card d-block-flex class="text-center">
+    <v-card d-block-flex class="text-center" style="padding:25px">
       <h2 class="display-2 font-weight-bold mb-6">What is Climate Action Carleton?</h2>
       <v-responsive
         class="mx-auto title font-weight-light mb-8"

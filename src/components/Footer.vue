@@ -6,12 +6,12 @@
           <v-icon color="black" size="24px">{{ icon.img }}</v-icon>
         </v-btn>
       </v-card-text>
+      <v-card-text class="black--text text-center grey lighten-5" width="100vw">
+        <a href="mailto:climateactioncarleton@gmail.com">climateactioncarleton@gmail.com</a>
+      </v-card-text>
+      <v-divider style="padding-bottom:10px"></v-divider>
       <v-card-text class="black--text pt-0" width="100vw">{{acknowledgement}}</v-card-text>
     </v-card>
-    <v-divider></v-divider>
-    <v-card-text class="black--text text-center grey lighten-5" width="100vw">
-      <a href="mailto:climateactioncarleton@gmail.com">climateactioncarleton@gmail.com</a>
-    </v-card-text>
     <v-divider></v-divider>
     <v-card-text class="black--text text-center grey lighten-5" width="100vw">
       {{ new Date().getFullYear() }} —
@@ -29,7 +29,7 @@
           Cameron Dickie @
           <a href="https://cmxx.ca">CMXX.ca</a>
         </p>partnered with
-        <p class="font-weight-bold">Pareena Sumbli</p>
+        <p class="font-weight-bold">Pareena Sumbli @ <a href="mailto:pareenasumbli@gmail.com">pareenasumbli@gmail.com</a></p>
       </v-card>
       <v-btn @click="overlay = false">Close</v-btn>
     </v-overlay>

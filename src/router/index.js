@@ -25,6 +25,7 @@ const routes = [{
         component: () =>
             import ( /* webpackChunkName: "about" */ '../views/About.vue')
     },
+    //holding off on development of divestment for the time being - will be released at the end of september
     {
         path: '/divestment',
         name: 'Divestment',
